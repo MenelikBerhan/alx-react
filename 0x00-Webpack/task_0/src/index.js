@@ -1,4 +1,5 @@
-import $ from "jquery";
+// import $ from "jquery";
+const $ = require( "jquery" );
 
 // add three parapgraphs
 $('body').append(
