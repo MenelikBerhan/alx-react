@@ -13,12 +13,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpeg|jpg|gif|svg)$/i,
-        type: 'asset/resource',
-      },
-      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpeg|jpg|gif|svg)$/i,
+        // type: 'asset/resource',
+        use: [
+          'file-loader',
+          {
+            loader: "image-webpack-loader",
+					  options: {
+							bypassingOnDebug: true,
+							disable: true,
+					  },
+          }
+        ]
       },
     ],
   },
