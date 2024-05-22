@@ -18,18 +18,9 @@ module.exports = {
       },
       {
         test: /\.(png|jpeg|jpg|gif|svg)$/i,
-        // type: 'asset/resource',
-        use: [
-          'file-loader',
-          {
-            loader: "image-webpack-loader",
-					  options: {
-							bypassingOnDebug: true,
-							disable: true,
-					  },
-          }
-        ]
+        type: 'asset/resource',
       },
     ],
   },
 };
+
