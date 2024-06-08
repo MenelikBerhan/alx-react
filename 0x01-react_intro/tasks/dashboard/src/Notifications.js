@@ -15,7 +15,6 @@ function Notifications() {
           border: 'none',
           padding: 0,
         }}
-        display="absolute"
         aria-label="Close"
         onClick={() => console.log('Close button has been clicked')}
       >
