@@ -64,3 +64,5 @@ function Footer({ isIndex }) {
     </footer>
   );
 }
+
+export { Header, Body, Footer };
