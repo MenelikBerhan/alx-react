@@ -27,11 +27,9 @@ button.append(closeImg);
 
 const list = document.createElement('ul');
 // eslint-disable-next-line no-multi-str
-list.innerHTML = "<ul>\
-  <li data='default'>New course available</li>\
+list.innerHTML = "<li data='default'>New course available</li>\
   <li data='urgent'>New resume available</li>\
-  <li data='urgent'><strong>Urgent requirement</strong> - complete by EOD</li>\
-</ul>";
+  <li data='urgent'><strong>Urgent requirement</strong> - complete by EOD</li>";
 
 notifications.append(button, list);
 
@@ -59,8 +57,8 @@ formHeading.innerHTML = 'Login to access the full dashboard';
 
 const form = document.createElement('form');
 // eslint-disable-next-line no-multi-str
-form.innerHTML = '<div className="form-entry" style="display: inline-block; padding-right: 1rem;">\
-<label htmlFor="email" style="padding-right: 1rem;">Email:</label>\
+form.innerHTML = '<div class="form-entry" style="display: inline-block; padding-right: 1rem;">\
+<label for="email" style="padding-right: 1rem;">Email:</label>\
 <input\
   type="email"\
   id="email"\
@@ -68,8 +66,8 @@ form.innerHTML = '<div className="form-entry" style="display: inline-block; padd
   autoComplete="username">\
 </input>\
 </div>\
-<div className="form-entry" style="display: inline-block; padding-right: 1rem;">\
-<label htmlFor="password" style="padding-right: 1rem;">Password:</label>\
+<div class="form-entry" style="display: inline-block; padding-right: 1rem;">\
+<label for="password" style="padding-right: 1rem;">Password:</label>\
 <input\
   type="password"\
   id="password"\
@@ -77,7 +75,7 @@ form.innerHTML = '<div className="form-entry" style="display: inline-block; padd
   autoComplete="current-password">\
 </input>\
 </div>\
-<button className="form-buttom" type="submit">OK</button>';
+<button class="form-buttom" type="submit">OK</button>';
 
 main.append(formHeading, form);
 

@@ -62,7 +62,7 @@ body {
   color: blue;
 }
 .Notifications [data='urgent'] {
-  color: red;
+  color: crimson;
 }
 .Notifications button:hover {
   background-color: rgb(168, 168, 168);
