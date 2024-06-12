@@ -1,0 +1,20 @@
+/* Root */
+#root-notifications {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Notifications {
+  border: 1px dashed crimson;
+  margin: 1rem 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.Notifications [data='default'] {
+  color: blue;
+}
+.Notifications [data='urgent'] {
+  color: crimson;
+}
+.Notifications button:hover {
+  background-color: rgb(168, 168, 168);
+}
