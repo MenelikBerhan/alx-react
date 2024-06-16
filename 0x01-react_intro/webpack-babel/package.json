@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start-build": "webpack serve --open --hot --mode production",
-    "start-dev": "webpack-dev-server --open"
+    "dev": "webpack --mode development --config config/webpack.config.js",
+    "build": "webpack --mode production --config config/webpack.config.js",
+    "start-build": "webpack-dev-server --open --mode production --config config/webpack.config.js",
+    "start-dev": "webpack-dev-server --open --config config/webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-runtime": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
     "@cfaester/enzyme-adapter-react-18": "^0.8.0",
@@ -41,7 +42,15 @@
     ],
     "rules": {
       "no-console": "off",
-      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true
+        }
+      ]
     }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.7"
   }
 }
